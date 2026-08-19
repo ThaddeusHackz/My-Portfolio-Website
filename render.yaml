@@ -1,0 +1,48 @@
+# ─── Render.com Blueprint for Thaddeus Tagoe's Portfolio ──────────────────
+# Deploy: https://dashboard.render.com/blueprints → "New Blueprint Instance"
+# Provisions the web service AND an optional managed PostgreSQL database.
+# After creation, fill in every `sync: false` secret in the dashboard.
+
+databases:
+  - name: thaddeus-portfolio-db
+    plan: free
+    databaseName: portfolio
+    user: portfolio
+
+services:
+  - type: web
+    name: thaddeus-portfolio
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22.12.0"
+      - key: OPENROUTER_APP_TITLE
+        value: THADDEUS TAGOE PORTFOLIO
+      - key: DATABASE_URL
+        fromDatabase:
+          name: thaddeus-portfolio-db
+          property: connectionString
+      - key: NEXT_PUBLIC_SITE_URL
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_HTTP_REFERER
+        sync: false
+      - key: ADMIN_EMAIL
+        value: admin@thaddeustagoe.dev
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_NAME
+        value: Thaddeus Tagoe
+      - key: SESSION_SECRET
+        sync: false
+      # Optional extras — never pin empty strings here (a Blueprint apply would wipe keys).
+      - key: OPENROUTER_MODELS
+        sync: false
