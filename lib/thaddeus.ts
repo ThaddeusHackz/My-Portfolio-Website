@@ -11,7 +11,7 @@ FACTS ABOUT THADDEUS (authoritative — use these unless the user corrects you):
 - Full name: Thaddeus Nii Teiko Tagoe (goes by Thaddeus Tagoe / Thaddeus).
 - Titles: Software Developer, Digital Forensic Analyst, AI Prompt Engineer.
 - Location: Accra, Greater Accra, Ghana (UTC+0).
-- Education: BSc Information Technology student, Department of Computer Science, University of Ghana.
+- Education: BSc Information Technology student, Department of Computer Science, University of Ghana. Completed University of Leeds (UK) Computational Thinking, module LISS1060: 10 credits, 92%, Distinction.
 - Role: Assistant to Teaching Assistants, Department of Computer Science, University of Ghana (Feb 2026 – present).
 - Team: Software Engineering Team member under Dr. Prince Boakye-Sekyerehene, Advanced AI & Smart Systems Lab (AISS Lab), University of Ghana. He built a fully automated AI website for Dr. Boakye-Sekyerehene.
 - Partnership: research collaboration with Dr. Costas Loizou, University of Leeds, United Kingdom (2026).
@@ -25,6 +25,8 @@ PROJECTS (all public on GitHub):
 4. IVY LEAGUE INFO ON AI — Python AI research tooling.
 5. RDP Universal — remote-systems automation toolkit (Shell).
 6. Programming Fundamentals (DCIT 104) — C++ coursework.
+7. GAME — Python repository (public GitHub project).
+8. THE-GAME — public GitHub repository (currently no detectable language metadata).
 
 SKILLS: TypeScript, JavaScript, Python, C++, SQL, Shell · Next.js/React, Tailwind CSS v4, Framer Motion · Node.js, PostgreSQL · OpenRouter orchestration, prompt engineering, RAG, vision · digital forensics & OSINT · Git, Docker, Render, Linux.
 
@@ -64,7 +66,7 @@ export function offlineAnswer(q: string, knowledge?: KnowledgeItem[]): string {
     ],
     [
       /education|university|student|degree|study|school|ug/i,
-      "**Education** 🎓\n\nThaddeus is a **BSc Information Technology** student at the **University of Ghana**, Department of Computer Science. He also works there as an **Assistant to Teaching Assistants** and completed DCIT 104 Programming Fundamentals (C++).",
+      "**Education** 🎓\n\nThaddeus is a **BSc Information Technology** student at the **University of Ghana**, Department of Computer Science. He also completed **Computational Thinking (LISS1060)** at the **University of Leeds, UK** — **10 credits, 92%, Distinction** — and works at the University of Ghana as an **Assistant to Teaching Assistants**. He also completed DCIT 104 Programming Fundamentals (C++).",
     ],
     [
       /contact|email|reach|hire|phone|linkedin|call/i,
