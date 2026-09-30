@@ -28,7 +28,7 @@ export const DEFAULT_CONTENT: SiteContent = {
   aboutBody:
     "Thaddeus Nii Teiko Tagoe is an Information Technology student and applied AI engineer at the University of Ghana. He ships complete products — frontend, backend, database, admin tooling and AI orchestration — under his engineering brand ThaddeusTechz. His work spans AI-driven agriculture, national disease forecasting, global monitoring dashboards and remote-systems automation, with a forensic-grade attention to security, reliability and graceful degradation.",
   aboutFacts:
-    "BSc Information Technology (in progress) · Assistant to Teaching Assistants, Dept. of Computer Science, University of Ghana · Software Engineering Team member under Dr. Prince Boakye-Sekyerehene · Research partnership with Dr. Costas Loizou, University of Leeds (2026)",
+    "BSc Information Technology (in progress) · University of Leeds, UK: Computational Thinking (LISS1060), 10 credits, 92%, Distinction · Assistant to Teaching Assistants, Dept. of Computer Science, University of Ghana · Software Engineering Team member under Dr. Prince Boakye-Sekyerehene · Research partnership with Dr. Costas Loizou, University of Leeds (2026)",
   projectsTitle: "Selected work",
   projectsBody:
     "Every project below is live, open-source and production-oriented — each one ships with an admin panel, AI fallback chains and Render-ready deployment.",
@@ -69,7 +69,7 @@ export const DEFAULT_PROJECTS: Project[] = [
     tagline: "National disease forecasting & early-warning intelligence",
     description:
       "A decision-support command layer for the Ghana Health Service: probabilistic disease forecasting, document vision, live search and a One Health signal desk. Powered by a single OpenRouter key with an automatic cross-provider fallback chain (OpenAI → Gemini → Claude → DeepSeek → Llama → free models).",
-    repo: "https://github.com/ThaddeusHackz/ONE-HEALTH",
+    repo: "https://github.com/ThaddeusHackz/ONE-HEALTH-AI",
     stack: ["Next.js", "TypeScript", "OpenRouter", "Recharts", "PostgreSQL"],
     featured: true,
     year: "2026",
@@ -100,6 +100,30 @@ export const DEFAULT_PROJECTS: Project[] = [
     featured: true,
     year: "2026",
     category: "AI / Research",
+  },
+  {
+    id: "prj_game",
+    slug: "game",
+    title: "GAME",
+    tagline: "Python project",
+    description: "A public Python project in ThaddeusHackz's GitHub portfolio.",
+    repo: "https://github.com/ThaddeusHackz/GAME",
+    stack: ["Python"],
+    featured: false,
+    year: "2026",
+    category: "Software",
+  },
+  {
+    id: "prj_the_game",
+    slug: "the-game",
+    title: "THE-GAME",
+    tagline: "Experimental project repository",
+    description: "A public experimental repository in ThaddeusHackz's GitHub portfolio.",
+    repo: "https://github.com/ThaddeusHackz/THE-GAME",
+    stack: ["GitHub"],
+    featured: false,
+    year: "2026",
+    category: "Software",
   },
   {
     id: "prj_rdp",
@@ -194,6 +218,15 @@ export const DEFAULT_EDUCATION: EducationItem[] = [
     period: "In progress",
     notes:
       "Applied IT curriculum with coursework in programming fundamentals (C++), data structures, and human-centred computing — paired with hands-on production engineering.",
+  },
+  {
+    id: "edu_leeds_liss1060",
+    school: "University of Leeds, United Kingdom",
+    degree: "Computational Thinking — LISS1060",
+    field: "10 credits · 92% · Distinction",
+    period: "Completed",
+    notes:
+      "Completed a University of Leeds course in Computational Thinking with a Distinction, achieving 92% across 10 credits.",
   },
   {
     id: "edu_dcit",
